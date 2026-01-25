@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 | Página No Encontrada</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { matte: '#020202', gold: '#D4AF37' },
+                    fontFamily: { heading: ['Cinzel', 'serif'], body: ['Montserrat', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-matte text-white h-screen flex flex-col items-center justify-center text-center px-6">
+    <h1 class="font-heading text-9xl text-gold opacity-20 font-bold select-none">404</h1>
+    <h2 class="font-heading text-3xl md:text-4xl mb-4 relative z-10 -mt-12">RUTA INEXISTENTE</h2>
+    <p class="font-body text-gray-400 mb-8 max-w-md">La página que busca no existe o ha sido movida. En el derecho penal, los errores se pagan caro; aquí, solo debe volver al inicio.</p>
+    
+    <a href="/" class="px-8 py-3 border border-gold text-gold hover:bg-gold hover:text-black transition-all font-heading tracking-widest text-sm font-bold uppercase">
+        Volver al Estudio
+    </a>
+</body>
+</html>

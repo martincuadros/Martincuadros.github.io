@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="es-AR" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Martin Alan Cuadros Panunzio | Abogado Penalista</title>
-    <meta name="description" content="Defensa Penal de Alta Complejidad. Dr. Martin Alan Cuadros Panunzio. Urgencias 24hs, Excarcelaciones, Narcotráfico y Derecho Penal Económico.">
+    
+    <!-- SEO & Metadatos de Alto Impacto -->
+    <title>Estudio Jurídico Cuadros & Asociados | Defensa Penal Provincia de Buenos Aires</title>
+    <meta name="description" content="Firma legal especializada en Derecho Penal de Alta Complejidad. Defensa técnica en Provincia de Buenos Aires. Urgencias 24hs, Excarcelaciones, Narcotráfico y Delitos Económicos.">
+    <meta name="keywords" content="Abogado Penalista, Estudio Jurídico Buenos Aires, Defensa Penal, Excarcelaciones, Martin Cuadros, Narcotráfico, Urgencias Penales, San Martín, Morón, La Matanza, Conurbano">
     <meta name="author" content="NieMarCorp">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.martincuadros.com.ar/">
+    <meta property="og:title" content="Estudio Jurídico Cuadros & Asociados">
+    <meta property="og:description" content="Defensa Penal Estratégica en Provincia de Buenos Aires. Atención de urgencia 24hs.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Geolocalización (Provincia de Buenos Aires) -->
+    <meta name="geo.region" content="AR-B">
+    <meta name="geo.placename" content="Buenos Aires">
 
     <!-- Tailwind CSS (CDN) -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -16,10 +31,13 @@
     <!-- Google Fonts: Cinzel (Autoridad) & Montserrat (Modernidad) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Favicon (Emoji temporal hasta tener logo SVG) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚖️</text></svg>">
 
     <!-- Configuración de Colores Personalizados (NieMarCorp Standard) -->
     <script>
@@ -27,8 +45,8 @@
             theme: {
                 extend: {
                     colors: {
-                        matte: '#050505',      // Negro Profundo
-                        surface: '#121212',    // Gris Oscuro para tarjetas
+                        matte: '#020202',      // Negro Absoluto
+                        surface: '#0a0a0a',    // Gris Carbón
                         gold: {
                             400: '#D4AF37',    // Dorado Clásico
                             500: '#C5A028',
@@ -43,12 +61,17 @@
                     },
                     animation: {
                         'pulse-gold': 'pulse-gold 2s infinite',
+                        'fade-in-up': 'fadeInUp 1s ease-out forwards',
                     },
                     keyframes: {
                         'pulse-gold': {
-                            '0%': { boxShadow: '0 0 0 0 rgba(212, 175, 55, 0.7)' },
-                            '70%': { boxShadow: '0 0 0 15px rgba(212, 175, 55, 0)' },
+                            '0%': { boxShadow: '0 0 0 0 rgba(212, 175, 55, 0.4)' },
+                            '70%': { boxShadow: '0 0 0 20px rgba(212, 175, 55, 0)' },
                             '100%': { boxShadow: '0 0 0 0 rgba(212, 175, 55, 0)' },
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
                         }
                     }
                 }
@@ -57,42 +80,39 @@
     </script>
 
     <style>
-        /* Estilos Globales */
-        body {
-            background-color: #050505;
-            color: #E5E7EB;
-        }
+        /* Estilos Globales de Alta Fidelidad */
+        html { scroll-behavior: smooth; }
+        body { background-color: #020202; color: #E5E7EB; overflow-x: hidden; }
 
-        /* Scrollbar Personalizado */
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #050505; }
-        ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+        /* Scrollbar Premium */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #020202; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
         ::-webkit-scrollbar-thumb:hover { background: #D4AF37; }
 
-        /* Selección de texto */
         ::selection { background: #D4AF37; color: #000; }
 
-        /* Efecto Cristal (Glassmorphism) */
+        /* Efectos de Cristal y Profundidad */
         .glass-nav {
-            background: rgba(5, 5, 5, 0.9);
-            backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+            background: rgba(2, 2, 2, 0.95);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
         }
 
         .glass-card {
-            background: rgba(20, 20, 20, 0.6);
-            backdrop-filter: blur(5px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            transition: all 0.4s ease;
+            background: linear-gradient(145deg, rgba(20, 20, 20, 0.9), rgba(10, 10, 10, 0.95));
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .glass-card:hover {
-            border-color: rgba(212, 175, 55, 0.5);
+            border-color: rgba(212, 175, 55, 0.6);
             transform: translateY(-5px);
-            box-shadow: 0 10px 40px -10px rgba(212, 175, 55, 0.1);
+            box-shadow: 0 20px 40px -10px rgba(212, 175, 55, 0.15);
         }
 
-        /* Gradiente Dorado para Texto */
+        /* Gradiente Dorado de Lujo */
         .text-gold-gradient {
             background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
             -webkit-background-clip: text;
@@ -100,374 +120,400 @@
             color: transparent;
         }
 
-        /* Pantalla de Carga */
-        #splash-screen {
-            transition: opacity 0.8s ease-out, visibility 0.8s;
-        }
-
-        /* Fix autocompletado inputs dark mode */
+        /* Utilidades de Formulario */
         input:-webkit-autofill,
         input:-webkit-autofill:focus {
             -webkit-text-fill-color: #E5E7EB;
-            -webkit-box-shadow: 0 0 0px 1000px #121212 inset;
+            -webkit-box-shadow: 0 0 0px 1000px #0a0a0a inset;
             transition: background-color 5000s ease-in-out 0s;
         }
     </style>
 </head>
-<body class="font-body antialiased overflow-x-hidden">
+<body class="font-body antialiased">
 
     <!-- 1. PANTALLA DE CARGA (SPLASH SCREEN) -->
-    <div id="splash-screen" class="fixed inset-0 z-[100] bg-matte flex items-center justify-center flex-col">
-        <div class="relative">
-            <!-- Iniciales animadas -->
-            <h1 class="font-heading text-6xl md:text-8xl font-bold text-gold-400 tracking-widest animate-pulse">MAC</h1>
-            <div class="h-0.5 w-full bg-gold-400 mt-4 origin-left animate-[grow_1.5s_ease-in-out]"></div>
+    <div id="splash-screen" class="fixed inset-0 z-[100] bg-matte flex items-center justify-center flex-col transition-opacity duration-700">
+        <div class="relative flex flex-col items-center">
+            <i class="fas fa-scale-balanced text-5xl text-gold-400 mb-4 animate-pulse"></i>
+            <h1 class="font-heading text-4xl md:text-5xl font-bold text-white tracking-widest">CUADROS</h1>
+            <p class="mt-2 font-heading text-xs tracking-[0.5em] text-gold-400 uppercase">& ASOCIADOS</p>
         </div>
-        <p class="mt-4 font-heading text-xs tracking-[0.4em] text-gray-500 uppercase">Estudio Jurídico Penal</p>
     </div>
 
     <!-- 2. BARRA DE NAVEGACIÓN -->
-    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-6 top-0">
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-6 top-0 border-b border-transparent">
         <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
             <!-- Marca / Logo -->
-            <a href="#" class="group flex flex-col items-center justify-center border-2 border-transparent hover:border-gold-400/30 p-1 transition-all">
-                <span class="font-heading text-xl md:text-2xl font-bold text-white tracking-widest group-hover:text-gold-400 transition-colors">CUADROS</span>
-                <span class="text-[0.6rem] uppercase tracking-[0.3em] text-gray-400 group-hover:text-white">Panunzio</span>
+            <a href="#" class="group flex flex-col items-start justify-center">
+                <span class="font-heading text-lg md:text-xl font-bold text-white tracking-widest group-hover:text-gold-400 transition-colors">ESTUDIO JURÍDICO</span>
+                <span class="text-[0.6rem] md:text-[0.7rem] uppercase tracking-[0.2em] text-gold-400">Cuadros & Asociados</span>
             </a>
 
             <!-- Menú Escritorio -->
             <div class="hidden md:flex space-x-8 items-center">
-                <a href="#inicio" class="text-xs font-semibold tracking-widest hover:text-gold-400 transition-colors uppercase">Inicio</a>
-                <a href="#perfil" class="text-xs font-semibold tracking-widest hover:text-gold-400 transition-colors uppercase">El Abogado</a>
-                <a href="#areas" class="text-xs font-semibold tracking-widest hover:text-gold-400 transition-colors uppercase">Áreas</a>
-                <a href="#casos" class="text-xs font-semibold tracking-widest hover:text-gold-400 transition-colors uppercase">Resultados</a>
-                <a href="#contacto" class="px-5 py-2 border border-gold-400 text-gold-400 hover:bg-gold-400 hover:text-black transition-all duration-300 text-xs tracking-widest uppercase font-bold">
-                    Contacto Urgente
+                <a href="#inicio" class="text-xs font-semibold tracking-widest text-gray-300 hover:text-gold-400 transition-colors uppercase relative group">
+                    Inicio
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gold-400 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="#firma" class="text-xs font-semibold tracking-widest text-gray-300 hover:text-gold-400 transition-colors uppercase relative group">
+                    La Firma
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gold-400 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="#areas" class="text-xs font-semibold tracking-widest text-gray-300 hover:text-gold-400 transition-colors uppercase relative group">
+                    Especialidades
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gold-400 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="#contacto" class="px-6 py-2 border border-gold-400 text-gold-400 hover:bg-gold-400 hover:text-black transition-all duration-300 text-xs tracking-widest uppercase font-bold shadow-[0_0_15px_rgba(212,175,55,0.2)] hover:shadow-[0_0_25px_rgba(212,175,55,0.6)]">
+                    Urgencias 24hs
                 </a>
             </div>
 
             <!-- Botón Menú Móvil -->
-            <button id="mobile-menu-btn" class="md:hidden text-gold-400 text-2xl">
+            <button id="mobile-menu-btn" class="md:hidden text-gold-400 text-2xl focus:outline-none">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
 
         <!-- Menú Móvil Desplegable -->
-        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-matte/95 border-b border-gray-800 py-6 flex flex-col items-center space-y-6 md:hidden backdrop-blur-xl">
-            <a href="#inicio" class="text-sm tracking-widest uppercase">Inicio</a>
-            <a href="#perfil" class="text-sm tracking-widest uppercase">El Abogado</a>
-            <a href="#areas" class="text-sm tracking-widest uppercase">Áreas</a>
-            <a href="#casos" class="text-sm tracking-widest uppercase">Resultados</a>
-            <a href="#contacto" class="text-gold-400 font-bold tracking-widest uppercase">Contacto Urgente</a>
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-matte/95 border-b border-gold-400/20 py-8 flex flex-col items-center space-y-8 md:hidden backdrop-blur-xl transition-all shadow-2xl">
+            <a href="#inicio" class="text-sm tracking-widest uppercase text-white hover:text-gold-400">Inicio</a>
+            <a href="#firma" class="text-sm tracking-widest uppercase text-white hover:text-gold-400">La Firma</a>
+            <a href="#areas" class="text-sm tracking-widest uppercase text-white hover:text-gold-400">Especialidades</a>
+            <a href="#contacto" class="text-gold-400 font-bold tracking-widest uppercase border border-gold-400 px-8 py-3">Contacto Urgente</a>
         </div>
     </nav>
 
-    <!-- 3. HERO (PORTADA) -->
+    <!-- 3. HERO (PORTADA DE ALTO IMPACTO) -->
     <header id="inicio" class="relative w-full h-screen flex items-center justify-center overflow-hidden">
-        <!-- Fondo Video/Imagen Oscura -->
-        <div class="absolute inset-0 bg-black/70 z-10"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-matte via-transparent to-matte/50 z-10"></div>
-        
-        <!-- Placeholder de Video/Imagen de Fondo -->
-        <div class="absolute inset-0 w-full h-full z-0">
-             <!-- IMAGEN DE FONDO SERIA Y ELEGANTE -->
-            <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" 
-                 class="w-full h-full object-cover opacity-60 grayscale" 
-                 alt="Justicia Penal">
+        <!-- Fondo Video/Imagen -->
+        <div class="absolute inset-0 bg-black z-0">
+             <!-- Imagen de fondo oscura y judicial -->
+            <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" 
+                 class="w-full h-full object-cover opacity-40 scale-105 animate-[pulse_10s_ease-in-out_infinite]" 
+                 alt="Tribunales y Justicia">
         </div>
+        
+        <!-- Overlay Gradiente -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-matte z-10"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,#020202_90%)] z-10"></div>
 
         <!-- Contenido Central -->
-        <div class="relative z-20 text-center px-4 max-w-5xl mx-auto" data-aos="fade-up" data-aos-duration="1500">
-            <div class="inline-block border-b border-gold-400 mb-6 pb-2">
-                <p class="text-gold-400 tracking-[0.3em] font-heading text-xs md:text-sm font-bold uppercase">Defensa Penal de Alta Complejidad</p>
+        <div class="relative z-20 text-center px-4 max-w-6xl mx-auto mt-16" data-aos="zoom-out" data-aos-duration="1500">
+            
+            <div class="inline-flex items-center space-x-3 border border-gold-400/30 bg-black/50 backdrop-blur-sm px-4 py-2 rounded-full mb-8">
+                <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                <p class="text-gold-400 tracking-[0.2em] font-heading text-[0.65rem] md:text-xs font-bold uppercase">Disponibilidad Inmediata en PBA</p>
             </div>
             
-            <h1 class="font-heading text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
-                MARTIN ALAN <br> <span class="text-gold-gradient">CUADROS PANUNZIO</span>
+            <h1 class="font-heading text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight tracking-tight">
+                ESTUDIO JURÍDICO <br> 
+                <span class="text-gold-gradient drop-shadow-lg">CUADROS & ASOCIADOS</span>
             </h1>
             
-            <p class="font-body text-gray-300 font-light tracking-wide mb-10 text-sm md:text-lg max-w-2xl mx-auto leading-relaxed">
-                Protegemos su libertad cuando más importa. Representación inmediata en comisarías, fiscalías y tribunales federales.
+            <p class="font-body text-gray-300 font-light tracking-wide mb-10 text-sm md:text-lg max-w-2xl mx-auto leading-relaxed border-l-2 border-gold-400 pl-4 text-left md:text-center md:border-l-0 md:pl-0">
+                Defensa Penal Estratégica de Alta Complejidad. <br class="hidden md:block">
+                Representación técnica superior en todo el territorio de la <strong class="text-white">Provincia de Buenos Aires</strong>.
             </p>
             
-            <div class="flex flex-col md:flex-row gap-4 justify-center">
-                <a href="#contacto" class="group relative px-8 py-4 bg-gold-400 text-black font-heading font-bold tracking-widest overflow-hidden transition-all hover:bg-white text-sm">
-                    <span class="relative z-10">INICIAR DEFENSA</span>
-                    <div class="absolute inset-0 h-full w-full scale-0 transition-all duration-300 group-hover:scale-100 group-hover:bg-white/30"></div>
+            <div class="flex flex-col md:flex-row gap-5 justify-center items-center">
+                <a href="#contacto" class="w-full md:w-auto px-10 py-4 bg-gold-400 text-black font-heading font-bold tracking-widest transition-all hover:bg-white hover:scale-105 shadow-[0_0_20px_rgba(212,175,55,0.4)] text-sm">
+                    CONSULTAR CASO
                 </a>
-                <a href="https://wa.me/5491132153543" target="_blank" class="px-8 py-4 border border-white text-white font-heading font-bold tracking-widest hover:bg-white hover:text-black transition-all duration-300 text-sm">
-                    <i class="fab fa-whatsapp mr-2"></i> WHATSAPP 24HS
+                <a href="https://wa.me/5491132153543" target="_blank" class="w-full md:w-auto px-10 py-4 border border-white/30 bg-white/5 backdrop-blur-sm text-white font-heading font-bold tracking-widest hover:bg-white hover:text-black transition-all duration-300 text-sm flex items-center justify-center gap-2 group">
+                    <i class="fab fa-whatsapp text-lg group-hover:text-green-600"></i> WHATSAPP
                 </a>
             </div>
         </div>
         
-        <!-- Indicador de Scroll -->
-        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 animate-bounce text-gold-400/50">
+        <!-- Scroll Indicator -->
+        <a href="#firma" class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 animate-bounce text-gold-400/50 hover:text-gold-400 transition-colors">
             <i class="fas fa-chevron-down text-2xl"></i>
-        </div>
+        </a>
     </header>
 
-    <!-- 4. PERFIL DEL ABOGADO -->
-    <section id="perfil" class="py-24 px-6 bg-matte relative">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+    <!-- 4. LA FIRMA (PERFIL PROFESIONAL) -->
+    <section id="firma" class="py-24 px-6 bg-matte relative overflow-hidden">
+        <!-- Elementos decorativos de fondo -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-gold-400/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
             
-            <!-- Área de Imagen -->
-            <div class="relative" data-aos="fade-right">
-                <div class="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-gold-400/30"></div>
-                <div class="absolute -bottom-4 -right-4 w-24 h-24 border-b-2 border-r-2 border-gold-400/30"></div>
-                <!-- FOTO DEL ABOGADO (Placeholder) -->
-                <div class="w-full h-[500px] bg-surface grayscale hover:grayscale-0 transition-all duration-700 overflow-hidden shadow-2xl relative group">
-                     <!-- REEMPLAZAR AQUÍ CON LA FOTO REAL DE MARTIN -->
-                    <!-- FOTO GENÉRICA (LEGAL/JUSTICIA) PARA MUESTRA -->
-<img src="https://images.unsplash.com/photo-1589391886645-d51941baf7fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-     alt="Justicia y Derecho Penal" 
-     class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 opacity-80">
-     
-                    <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent p-6">
-                        <p class="text-white font-heading font-bold text-lg">Dr. Cuadros Panunzio</p>
-                        <p class="text-gold-400 text-xs tracking-widest">FUNDADOR</p>
+            <!-- Imagen / Composición Visual -->
+            <div class="relative order-2 lg:order-1" data-aos="fade-right">
+                <div class="absolute -top-6 -left-6 w-32 h-32 border-t-2 border-l-2 border-gold-400/20"></div>
+                <div class="absolute -bottom-6 -right-6 w-32 h-32 border-b-2 border-r-2 border-gold-400/20"></div>
+                
+                <div class="relative h-[600px] w-full overflow-hidden bg-surface group shadow-2xl">
+                    <!-- Placeholder Profesional -->
+                    <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                         alt="Abogado Penalista Buenos Aires" 
+                         class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105 opacity-80">
+                    
+                    <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black via-black/80 to-transparent p-8">
+                        <p class="text-gold-400 font-heading text-xs tracking-[0.2em] mb-1">DIRECTOR EJECUTIVO</p>
+                        <h3 class="text-white font-heading font-bold text-2xl">Dr. Martin A. Cuadros</h3>
+                        <p class="text-gray-400 text-xs mt-2 uppercase tracking-wide">Tomo y Folio Habilitante</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Área de Texto -->
-            <div data-aos="fade-left">
-                <h3 class="text-gold-400 font-heading tracking-widest text-xs font-bold mb-2">SOBRE EL PROFESIONAL</h3>
-                <h2 class="font-heading text-3xl md:text-4xl text-white mb-6">NO JUZGAMOS.<br>DEFENDEMOS.</h2>
-                
-                <p class="text-gray-400 leading-relaxed mb-6 font-light text-sm md:text-base">
-                    En el derecho penal, no hay casos pequeños, solo vidas que defender. Mi práctica se centra exclusivamente en la defensa penal técnica, estratégica y humana.
-                </p>
-                <p class="text-gray-400 leading-relaxed mb-8 font-light text-sm md:text-base">
-                    Entiendo la angustia que genera un proceso penal. Mi compromiso no es solo legal, es personal: lucharé incansablemente para garantizar que sus derechos sean respetados. Actúo con la inmediatez que su caso demanda en toda la Provincia de Buenos Aires.
-                </p>
-                
-                <!-- Puntos Clave -->
-                <div class="grid grid-cols-2 gap-6 border-t border-gray-800 pt-8">
-                    <div>
-                        <span class="block text-3xl font-heading text-white font-bold">24/7</span>
-                        <span class="text-gold-400 text-xs tracking-widest uppercase">Disponibilidad</span>
-                    </div>
-                    <div>
-                        <span class="block text-3xl font-heading text-white font-bold">100%</span>
-                        <span class="text-gold-400 text-xs tracking-widest uppercase">Confidencialidad</span>
-                    </div>
+            <!-- Contenido Textual -->
+            <div class="order-1 lg:order-2" data-aos="fade-left">
+                <div class="flex items-center space-x-4 mb-6">
+                    <div class="h-px w-12 bg-gold-400"></div>
+                    <span class="text-gold-400 font-heading tracking-widest text-xs font-bold uppercase">Trayectoria & Compromiso</span>
                 </div>
-
-                <div class="mt-8">
-                     <!-- Firma Digital (Decorativa) -->
-                    <p class="text-gray-500 font-heading text-sm tracking-widest border-l-2 border-gold-400 pl-4 italic">
-                        Martin A. Cuadros Panunzio
-                    </p>
+                
+                <h2 class="font-heading text-4xl lg:text-5xl text-white mb-8 leading-tight">
+                    RIGOR TÉCNICO. <br>
+                    <span class="text-gray-500">ESTRATEGIA HUMANA.</span>
+                </h2>
+                
+                <p class="text-gray-400 leading-relaxed mb-6 font-light text-base text-justify">
+                    En <strong>Estudio Jurídico Cuadros & Asociados</strong>, entendemos que detrás de cada expediente hay una vida, una familia y un futuro en juego. No somos un estudio generalista; somos una firma boutique especializada exclusivamente en <strong>Derecho Penal</strong>.
+                </p>
+                
+                <p class="text-gray-400 leading-relaxed mb-8 font-light text-base text-justify">
+                    Nuestra práctica se cimenta en el conocimiento profundo del Código Procesal Penal de la Provincia de Buenos Aires y en una capacidad de respuesta inmediata. Desde la primera intervención en comisaría hasta el litigio oral, diseñamos estrategias defensivas a medida para neutralizar la acusación y garantizar el debido proceso.
+                </p>
+                
+                <div class="grid grid-cols-2 gap-8 border-t border-gray-800 pt-8 mt-8">
+                    <div>
+                        <i class="fas fa-gavel text-gold-400 text-2xl mb-3"></i>
+                        <h4 class="text-white font-heading font-bold text-sm uppercase mb-1">Litigio Estratégico</h4>
+                        <p class="text-xs text-gray-500">Defensas activas, no meramente formales.</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-shield-halved text-gold-400 text-2xl mb-3"></i>
+                        <h4 class="text-white font-heading font-bold text-sm uppercase mb-1">Confidencialidad</h4>
+                        <p class="text-xs text-gray-500">Secreto profesional absoluto garantizado.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 5. ÁREAS DE PRÁCTICA (Integrando V2 con Diseño V1) -->
+    <!-- 5. ÁREAS DE PRÁCTICA (GRID GLASSMORPHISM) -->
     <section id="areas" class="py-24 bg-surface relative overflow-hidden">
-        <!-- Fondo de Textura Sutil -->
-        <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10"></div>
+        <!-- Textura Sutil -->
+        <div class="absolute inset-0 opacity-5 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
 
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="font-heading text-3xl md:text-5xl text-white mb-4">ÁREAS DE PRÁCTICA</h2>
-                <div class="h-0.5 w-16 bg-gold-400 mx-auto"></div>
-                <p class="mt-4 text-gray-500 text-sm max-w-2xl mx-auto">Especialización exclusiva en conflictos penales complejos.</p>
+                <h2 class="font-heading text-3xl md:text-5xl text-white mb-4">ÁREAS DE INTERVENCIÓN</h2>
+                <div class="h-1 w-24 bg-gold-400 mx-auto rounded-full"></div>
+                <p class="mt-6 text-gray-400 text-sm max-w-2xl mx-auto font-light">
+                    Cobertura integral en fueros provinciales y federales. Especialización en delitos complejos.
+                </p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 
-                <!-- Tarjeta 1: Detenciones -->
-                <div class="glass-card p-8 group cursor-pointer" data-aos="fade-up" data-aos-delay="100">
-                    <div class="h-10 w-10 border border-gold-400 rounded-full flex items-center justify-center mb-6 text-gold-400 group-hover:bg-gold-400 group-hover:text-black transition-colors">
-                        <i class="fas fa-handcuffs"></i>
+                <!-- Card 1 -->
+                <div class="glass-card p-10 group relative overflow-hidden" data-aos="fade-up" data-aos-delay="0">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <i class="fas fa-handcuffs text-6xl text-gold-400"></i>
                     </div>
-                    <h3 class="text-white font-heading text-lg mb-3 group-hover:text-gold-400 transition-colors">EXCARCELACIONES</h3>
+                    <h3 class="text-white font-heading text-xl mb-4 group-hover:text-gold-400 transition-colors">EXCARCELACIONES</h3>
                     <p class="text-gray-400 text-sm leading-relaxed font-light">
-                        Actuación inmediata en las primeras horas de detención. Solicitudes de excarcelación y eximición de prisión urgentes.
+                        Gestión urgente de libertades durante las primeras horas de detención. Habeas Corpus correctivos y preventivos. Apelaciones a prisiones preventivas.
                     </p>
+                    <div class="mt-6 w-8 h-0.5 bg-gray-700 group-hover:bg-gold-400 transition-colors"></div>
                 </div>
 
-                <!-- Tarjeta 2: Narcotráfico -->
-                <div class="glass-card p-8 group cursor-pointer" data-aos="fade-up" data-aos-delay="200">
-                    <div class="h-10 w-10 border border-gold-400 rounded-full flex items-center justify-center mb-6 text-gold-400 group-hover:bg-gold-400 group-hover:text-black transition-colors">
-                        <i class="fas fa-pills"></i>
+                <!-- Card 2 -->
+                <div class="glass-card p-10 group relative overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <i class="fas fa-pills text-6xl text-gold-400"></i>
                     </div>
-                    <h3 class="text-white font-heading text-lg mb-3 group-hover:text-gold-400 transition-colors">NARCOTRÁFICO</h3>
+                    <h3 class="text-white font-heading text-xl mb-4 group-hover:text-gold-400 transition-colors">NARCOTRÁFICO</h3>
                     <p class="text-gray-400 text-sm leading-relaxed font-light">
-                        Defensa especializada en infracciones a la ley de estupefacientes (Ley 23.737). Estrategias federales complejas.
+                        Defensa técnica en causas por infracción a la Ley 23.737. Estrategias ante tenencia simple, comercialización y contrabando. Cuestionamiento de allanamientos.
                     </p>
+                    <div class="mt-6 w-8 h-0.5 bg-gray-700 group-hover:bg-gold-400 transition-colors"></div>
                 </div>
 
-                <!-- Tarjeta 3: Penal Económico -->
-                <div class="glass-card p-8 group cursor-pointer" data-aos="fade-up" data-aos-delay="300">
-                    <div class="h-10 w-10 border border-gold-400 rounded-full flex items-center justify-center mb-6 text-gold-400 group-hover:bg-gold-400 group-hover:text-black transition-colors">
-                        <i class="fas fa-briefcase"></i>
+                <!-- Card 3 -->
+                <div class="glass-card p-10 group relative overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <i class="fas fa-chart-line text-6xl text-gold-400"></i>
                     </div>
-                    <h3 class="text-white font-heading text-lg mb-3 group-hover:text-gold-400 transition-colors">PENAL ECONÓMICO</h3>
+                    <h3 class="text-white font-heading text-xl mb-4 group-hover:text-gold-400 transition-colors">PENAL ECONÓMICO</h3>
                     <p class="text-gray-400 text-sm leading-relaxed font-light">
-                        Defensa ante acusaciones de estafas, fraudes corporativos, delitos tributarios y lavado de activos.
+                        Asesoramiento preventivo y litigio en delitos tributarios, lavado de activos, estafas y fraudes corporativos. Responsabilidad penal empresaria.
                     </p>
+                    <div class="mt-6 w-8 h-0.5 bg-gray-700 group-hover:bg-gold-400 transition-colors"></div>
                 </div>
 
-                <!-- Tarjeta 4: Homicidios -->
-                <div class="glass-card p-8 group cursor-pointer" data-aos="fade-up" data-aos-delay="400">
-                    <div class="h-10 w-10 border border-gold-400 rounded-full flex items-center justify-center mb-6 text-gold-400 group-hover:bg-gold-400 group-hover:text-black transition-colors">
-                        <i class="fas fa-gavel"></i>
+                <!-- Card 4 -->
+                <div class="glass-card p-10 group relative overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <i class="fas fa-person-rifle text-6xl text-gold-400"></i>
                     </div>
-                    <h3 class="text-white font-heading text-lg mb-3 group-hover:text-gold-400 transition-colors">HOMICIDIOS</h3>
+                    <h3 class="text-white font-heading text-xl mb-4 group-hover:text-gold-400 transition-colors">HOMICIDIOS Y LESIONES</h3>
                     <p class="text-gray-400 text-sm leading-relaxed font-light">
-                        Defensa técnica especializada en delitos contra las personas. Peritajes de parte y reconstrucción de hechos.
+                        Defensa en delitos contra las personas. Trabajo interdisciplinario con peritos de parte (criminalística, medicina legal) para reconstrucción de hechos.
                     </p>
+                    <div class="mt-6 w-8 h-0.5 bg-gray-700 group-hover:bg-gold-400 transition-colors"></div>
                 </div>
 
-                <!-- Tarjeta 5: Habeas Corpus -->
-                <div class="glass-card p-8 group cursor-pointer" data-aos="fade-up" data-aos-delay="500">
-                    <div class="h-10 w-10 border border-gold-400 rounded-full flex items-center justify-center mb-6 text-gold-400 group-hover:bg-gold-400 group-hover:text-black transition-colors">
-                        <i class="fas fa-file-contract"></i>
+                <!-- Card 5 -->
+                <div class="glass-card p-10 group relative overflow-hidden" data-aos="fade-up" data-aos-delay="400">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <i class="fas fa-venus-mars text-6xl text-gold-400"></i>
                     </div>
-                    <h3 class="text-white font-heading text-lg mb-3 group-hover:text-gold-400 transition-colors">HABEAS CORPUS</h3>
+                    <h3 class="text-white font-heading text-xl mb-4 group-hover:text-gold-400 transition-colors">VIOLENCIA DE GÉNERO</h3>
                     <p class="text-gray-400 text-sm leading-relaxed font-light">
-                        Acciones constitucionales rápidas ante amenazas ilegales a la libertad ambulatoria o agravamiento de condiciones.
+                        Representación en causas de violencia familiar y de género. Solicitud o levantamiento de medidas cautelares y perimetrales.
                     </p>
+                    <div class="mt-6 w-8 h-0.5 bg-gray-700 group-hover:bg-gold-400 transition-colors"></div>
                 </div>
 
-                <!-- Tarjeta 6: Violencia -->
-                <div class="glass-card p-8 group cursor-pointer" data-aos="fade-up" data-aos-delay="600">
-                    <div class="h-10 w-10 border border-gold-400 rounded-full flex items-center justify-center mb-6 text-gold-400 group-hover:bg-gold-400 group-hover:text-black transition-colors">
-                        <i class="fas fa-shield-alt"></i>
+                <!-- Card 6 -->
+                <div class="glass-card p-10 group relative overflow-hidden" data-aos="fade-up" data-aos-delay="500">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <i class="fas fa-user-shield text-6xl text-gold-400"></i>
                     </div>
-                    <h3 class="text-white font-heading text-lg mb-3 group-hover:text-gold-400 transition-colors">VIOLENCIA Y GÉNERO</h3>
+                    <h3 class="text-white font-heading text-xl mb-4 group-hover:text-gold-400 transition-colors">QUERELLAS</h3>
                     <p class="text-gray-400 text-sm leading-relaxed font-light">
-                        Asesoramiento y defensa técnica en causas vinculadas a violencia familiar y de género.
+                        Representación de víctimas de delitos. Constitución como Particular Damnificado para impulsar la causa y controlar la labor fiscal.
                     </p>
+                    <div class="mt-6 w-8 h-0.5 bg-gray-700 group-hover:bg-gold-400 transition-colors"></div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- 6. RESULTADOS (Nueva Sección adaptada a Dark Mode) -->
-    <section id="casos" class="py-20 bg-matte border-t border-gray-900">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="text-center mb-12">
-                <h2 class="font-heading text-3xl text-white mb-2">RESULTADOS RECIENTES</h2>
-                <p class="text-gray-600 text-xs italic uppercase tracking-widest">Nombres omitidos por estricta confidencialidad</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Caso 1 -->
-                <div class="bg-surface p-8 border-l-4 border-gold-400 shadow-lg" data-aos="fade-up">
-                    <h4 class="font-heading text-white text-lg mb-1">CAUSA: ESTAFA Y ASOCIACIÓN ILÍCITA</h4>
-                    <p class="text-xs text-gray-500 mb-4 uppercase tracking-wide">Situación: Prisión preventiva dictada</p>
-                    <p class="text-gray-400 text-sm font-light">
-                        <strong class="text-gold-400">RESULTADO:</strong> Logramos el cese de la prisión preventiva mediante la presentación de nuevas pruebas periciales contables. Libertad inmediata del cliente.
-                    </p>
-                </div>
-
-                <!-- Caso 2 -->
-                <div class="bg-surface p-8 border-l-4 border-gold-400 shadow-lg" data-aos="fade-up" data-aos-delay="200">
-                    <h4 class="font-heading text-white text-lg mb-1">CAUSA: TENENCIA DE ESTUPEFACIENTES</h4>
-                    <p class="text-xs text-gray-500 mb-4 uppercase tracking-wide">Situación: Allanamiento y detención</p>
-                    <p class="text-gray-400 text-sm font-light">
-                        <strong class="text-gold-400">RESULTADO:</strong> Se planteó la nulidad del procedimiento policial por irregularidades en la orden de allanamiento. El juez hizo lugar y dictó el sobreseimiento total.
-                    </p>
-                </div>
+    <!-- 6. ZONA DE ACCIÓN (MAPA ABSTRACTO) -->
+    <section class="py-16 bg-matte border-y border-gray-900">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h3 class="text-white font-heading text-xl mb-6 tracking-widest">ZONAS DE INFLUENCIA EN PBA</h3>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="px-6 py-2 bg-surface border border-gray-800 rounded-full text-gray-400 text-xs uppercase hover:border-gold-400 hover:text-white transition-all cursor-default">San Martín</span>
+                <span class="px-6 py-2 bg-surface border border-gray-800 rounded-full text-gray-400 text-xs uppercase hover:border-gold-400 hover:text-white transition-all cursor-default">Morón</span>
+                <span class="px-6 py-2 bg-surface border border-gray-800 rounded-full text-gray-400 text-xs uppercase hover:border-gold-400 hover:text-white transition-all cursor-default">San Isidro</span>
+                <span class="px-6 py-2 bg-surface border border-gray-800 rounded-full text-gray-400 text-xs uppercase hover:border-gold-400 hover:text-white transition-all cursor-default">La Matanza</span>
+                <span class="px-6 py-2 bg-surface border border-gray-800 rounded-full text-gray-400 text-xs uppercase hover:border-gold-400 hover:text-white transition-all cursor-default">Lomas de Zamora</span>
+                <span class="px-6 py-2 bg-surface border border-gray-800 rounded-full text-gray-400 text-xs uppercase hover:border-gold-400 hover:text-white transition-all cursor-default">Capital Federal</span>
             </div>
         </div>
     </section>
 
     <!-- 7. CONTACTO -->
     <section id="contacto" class="py-24 px-6 bg-matte relative">
-        <div class="max-w-6xl mx-auto flex flex-col lg:flex-row shadow-2xl">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row shadow-[0_0_50px_rgba(0,0,0,0.8)]">
             
-            <!-- Info Lateral -->
-            <div class="lg:w-5/12 bg-surface p-12 border-t-4 lg:border-t-0 lg:border-l-4 border-gold-400 relative overflow-hidden" data-aos="fade-right">
-                <div class="absolute -right-10 -bottom-10 text-[10rem] text-black opacity-40 font-heading font-bold select-none">MAC</div>
+            <!-- Info Lateral (Estética Premium) -->
+            <div class="lg:w-4/12 bg-surface p-12 border-l-4 border-gold-400 relative overflow-hidden flex flex-col justify-between" data-aos="fade-right">
+                <div class="absolute -right-20 -bottom-20 text-[12rem] text-black opacity-30 font-heading font-bold select-none pointer-events-none">⚖️</div>
                 
-                <h3 class="text-white font-heading text-3xl mb-8">CONTACTO</h3>
-                
-                <div class="space-y-8 relative z-10">
-                    <div>
-                        <p class="text-gold-400 text-xs tracking-widest uppercase mb-1">Ubicación</p>
-                        <p class="text-gray-300 font-light text-sm">Buenos Aires, Argentina<br>Atención Federal</p>
+                <div>
+                    <h3 class="text-white font-heading text-3xl mb-10">CONTACTO</h3>
+                    
+                    <div class="space-y-10 relative z-10">
+                        <div class="group">
+                            <p class="text-gold-400 text-[10px] tracking-[0.2em] uppercase mb-2 font-bold group-hover:text-white transition-colors">Sede Central</p>
+                            <p class="text-gray-300 font-light text-sm">Provincia de Buenos Aires, Argentina.<br>Atención en todos los Departamentos Judiciales.</p>
+                        </div>
+                        <div class="group">
+                            <p class="text-gold-400 text-[10px] tracking-[0.2em] uppercase mb-2 font-bold group-hover:text-white transition-colors">Urgencias 24 Horas</p>
+                            <a href="https://wa.me/5491132153543" class="text-2xl text-white hover:text-gold-400 transition-colors font-body font-medium flex items-center gap-2">
+                                <i class="fab fa-whatsapp"></i> +54 9 11 3215 3543
+                            </a>
+                            <p class="text-xs text-gray-600 mt-1">Línea directa exclusiva para detenciones.</p>
+                        </div>
+                        <div class="group">
+                            <p class="text-gold-400 text-[10px] tracking-[0.2em] uppercase mb-2 font-bold group-hover:text-white transition-colors">Correo Electrónico</p>
+                            <a href="mailto:consultas@martincuadros.com.ar" class="text-gray-300 hover:text-gold-400 transition-colors text-sm">consultas@martincuadros.com.ar</a>
+                        </div>
                     </div>
-                    <div>
-                        <p class="text-gold-400 text-xs tracking-widest uppercase mb-1">WhatsApp Urgencias 24/7</p>
-                        <a href="https://wa.me/5491132153543" class="text-xl text-white hover:text-gold-400 transition-colors font-body">+54 9 11 3215 3543</a>
-                    </div>
-                    <div>
-                        <p class="text-gold-400 text-xs tracking-widest uppercase mb-1">Email</p>
-                        <a href="mailto:contacto@estudiocuadros.com" class="text-gray-300 hover:text-gold-400 transition-colors text-sm">contacto@estudiocuadros.com</a>
-                    </div>
-                    <div class="pt-8">
-                        <p class="text-gray-600 text-xs italic">"La justicia no se espera, se conquista."</p>
-                    </div>
+                </div>
+
+                <div class="pt-12 border-t border-gray-800 mt-10">
+                    <p class="text-gray-500 text-xs italic font-serif">"Nulla poena sine lege."</p>
                 </div>
             </div>
 
-            <!-- Formulario -->
-            <div class="lg:w-7/12 bg-[#0a0a0a] p-12 relative" data-aos="fade-left">
-                <h3 class="text-white font-heading text-2xl mb-2">CONSULTA INICIAL</h3>
-                <p class="text-gray-500 mb-8 text-sm">Complete el formulario. Confidencialidad garantizada bajo secreto profesional.</p>
+            <!-- Formulario Minimalista -->
+            <div class="lg:w-8/12 bg-[#050505] p-12 lg:p-16 relative" data-aos="fade-left">
+                <h3 class="text-white font-heading text-2xl mb-2">SOLICITAR ASESORAMIENTO</h3>
+                <p class="text-gray-500 mb-10 text-sm">Su consulta está protegida por el secreto profesional desde el primer momento.</p>
 
-                <form action="#" method="POST" class="space-y-6">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div class="relative">
-                            <input type="text" id="nombre" class="w-full bg-transparent border-b border-gray-800 text-white py-3 focus:outline-none focus:border-gold-400 transition-colors placeholder-transparent peer" placeholder="Nombre" required>
-                            <label for="nombre" class="absolute left-0 -top-3.5 text-gray-500 text-xs transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-600 peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-gold-400">Nombre Completo</label>
+                <form action="https://formspree.io/f/mqkvqjrz" method="POST" class="space-y-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="relative group">
+                            <input type="text" id="nombre" name="nombre" class="w-full bg-transparent border-b border-gray-800 text-white py-3 focus:outline-none focus:border-gold-400 transition-colors placeholder-transparent peer" placeholder="Nombre" required>
+                            <label for="nombre" class="absolute left-0 -top-3.5 text-gray-600 text-xs transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-600 peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-gold-400 group-hover:text-gray-400">Nombre y Apellido</label>
                         </div>
-                        <div class="relative">
-                            <input type="tel" id="telefono" class="w-full bg-transparent border-b border-gray-800 text-white py-3 focus:outline-none focus:border-gold-400 transition-colors placeholder-transparent peer" placeholder="Teléfono" required>
-                            <label for="telefono" class="absolute left-0 -top-3.5 text-gray-500 text-xs transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-600 peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-gold-400">Teléfono</label>
+                        <div class="relative group">
+                            <input type="tel" id="telefono" name="telefono" class="w-full bg-transparent border-b border-gray-800 text-white py-3 focus:outline-none focus:border-gold-400 transition-colors placeholder-transparent peer" placeholder="Teléfono" required>
+                            <label for="telefono" class="absolute left-0 -top-3.5 text-gray-600 text-xs transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-600 peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-gold-400 group-hover:text-gray-400">Teléfono de Contacto</label>
                         </div>
                     </div>
 
-                    <div class="relative">
-                        <input type="email" id="email" class="w-full bg-transparent border-b border-gray-800 text-white py-3 focus:outline-none focus:border-gold-400 transition-colors placeholder-transparent peer" placeholder="Email" required>
-                        <label for="email" class="absolute left-0 -top-3.5 text-gray-500 text-xs transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-600 peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-gold-400">Email</label>
+                    <div class="relative group">
+                        <input type="email" id="email" name="email" class="w-full bg-transparent border-b border-gray-800 text-white py-3 focus:outline-none focus:border-gold-400 transition-colors placeholder-transparent peer" placeholder="Email" required>
+                        <label for="email" class="absolute left-0 -top-3.5 text-gray-600 text-xs transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-600 peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-gold-400 group-hover:text-gray-400">Email</label>
                     </div>
 
-                    <div class="relative">
-                        <textarea id="mensaje" rows="4" class="w-full bg-transparent border-b border-gray-800 text-white py-3 focus:outline-none focus:border-gold-400 transition-colors placeholder-transparent peer resize-none" placeholder="Mensaje" required></textarea>
-                        <label for="mensaje" class="absolute left-0 -top-3.5 text-gray-500 text-xs transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-600 peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-gold-400">Breve descripción del caso</label>
+                    <div class="relative group">
+                        <textarea id="mensaje" name="mensaje" rows="4" class="w-full bg-transparent border-b border-gray-800 text-white py-3 focus:outline-none focus:border-gold-400 transition-colors placeholder-transparent peer resize-none" placeholder="Mensaje" required></textarea>
+                        <label for="mensaje" class="absolute left-0 -top-3.5 text-gray-600 text-xs transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-600 peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-gold-400 group-hover:text-gray-400">Breve descripción del caso</label>
                     </div>
 
-                    <button type="submit" class="w-full bg-gold-400 text-black font-heading font-bold py-4 tracking-widest hover:bg-white transition-colors duration-300 mt-4 text-sm">
+                    <button type="submit" class="w-full md:w-auto px-12 py-4 bg-white text-black font-heading font-bold text-sm tracking-widest hover:bg-gold-400 transition-all duration-300 shadow-lg">
                         ENVIAR CONSULTA
                     </button>
+                    
+                    <p class="text-[10px] text-gray-600 mt-4">
+                        Al enviar este formulario, usted acepta nuestra política de privacidad. Sus datos serán tratados con estricta confidencialidad.
+                    </p>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- 8. FOOTER -->
-    <footer class="bg-black py-12 border-t border-gray-900">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+    <!-- 8. FOOTER LEGAL (PROTECCIÓN NIEMARCORP) -->
+    <footer class="bg-black py-16 border-t border-gray-900 text-sm">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
             
-            <div class="mb-6 md:mb-0 text-center md:text-left">
-                <span class="font-heading text-xl font-bold text-white tracking-widest border border-gold-400 p-2 inline-block mb-2">CP</span>
-                <p class="text-gray-600 text-[10px] uppercase tracking-widest mt-2">© 2025 Martin Alan Cuadros Panunzio.<br>Todos los derechos reservados.</p>
+            <!-- Columna 1: Marca -->
+            <div>
+                <span class="font-heading text-lg font-bold text-white tracking-widest border border-gold-400 p-3 inline-block mb-6">CP</span>
+                <p class="text-gray-500 leading-relaxed text-xs">
+                    Estudio Jurídico Cuadros & Asociados.<br>
+                    Defensa Penal de Excelencia.<br>
+                    Provincia de Buenos Aires, Argentina.
+                </p>
             </div>
 
-            <!-- Developer Signature -->
-            <div class="flex flex-col items-center md:items-end">
-                <p class="text-gray-700 text-[10px] uppercase tracking-widest mb-1">Desarrollo & Seguridad</p>
-                <div class="flex items-center space-x-2 opacity-70 hover:opacity-100 transition-opacity">
-                    <span class="text-gray-500 text-xs font-bold tracking-widest">NieMarCorp</span>
-                    <div class="w-2 h-2 rounded-full bg-gold-400 animate-pulse"></div>
+            <!-- Columna 2: Legal -->
+            <div>
+                <h4 class="text-white font-heading text-xs tracking-widest font-bold mb-6 uppercase">Aviso Legal</h4>
+                <div class="text-gray-600 text-[10px] space-y-3 leading-relaxed text-justify">
+                    <p><strong>Titularidad:</strong> Este sitio es propiedad del Dr. Martin Alan Cuadros Panunzio. La información aquí contenida es meramente informativa y no constituye asesoramiento legal vinculante hasta la formalización de un convenio de honorarios.</p>
+                    <p><strong>Responsabilidad:</strong> NieMarCorp actúa exclusivamente como proveedor de servicios de desarrollo web y ciberseguridad, no asumiendo responsabilidad alguna por el contenido jurídico, la gestión de casos o la veracidad de la información legal expuesta por el titular.</p>
                 </div>
+            </div>
+
+            <!-- Columna 3: Desarrollo -->
+            <div class="flex flex-col items-start md:items-end justify-end">
+                <p class="text-gray-700 text-[10px] uppercase tracking-widest mb-2">Infraestructura Digital & Seguridad</p>
+                <a href="https://niemarcorp.com" target="_blank" rel="noopener noreferrer" class="group flex items-center space-x-2 opacity-60 hover:opacity-100 transition-opacity">
+                    <span class="text-gray-500 text-xs font-bold tracking-widest group-hover:text-gold-400 transition-colors">NieMarCorp</span>
+                    <div class="w-2 h-2 rounded-full bg-gold-400 animate-pulse"></div>
+                </a>
+                <p class="text-gray-800 text-[9px] mt-2">© 2026 Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
 
     <!-- 9. BOTÓN FLOTANTE WHATSAPP (PANIC BUTTON) -->
-    <a href="https://wa.me/5491132153543?text=Necesito%20asistencia%20penal%20urgente" target="_blank" class="fixed bottom-6 right-6 z-40 bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center animate-pulse-gold hover:scale-110 transition-all duration-300 group shadow-2xl">
-        <i class="fab fa-whatsapp text-4xl"></i>
+    <a href="https://wa.me/5491132153543?text=Tengo%20una%20urgencia%20penal%20y%20necesito%20asistencia%20inmediata" target="_blank" class="fixed bottom-8 right-8 z-40 bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center animate-pulse-gold hover:scale-110 hover:rotate-12 transition-all duration-300 group shadow-[0_0_30px_rgba(37,211,102,0.4)]">
+        <i class="fab fa-whatsapp text-3xl"></i>
         <!-- Tooltip -->
-        <span class="absolute right-20 bg-black text-white text-xs px-4 py-2 rounded border-l-2 border-gold-400 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap font-bold">
-            URGENCIA 24HS
+        <span class="absolute right-20 bg-black text-white text-[10px] px-3 py-1 rounded border-l-2 border-gold-400 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap font-bold uppercase tracking-wide">
+            Urgencia 24hs
         </span>
     </a>
 
@@ -478,8 +524,8 @@
         AOS.init({
             once: true,
             offset: 50,
-            duration: 800,
-            easing: 'ease-out-cubic',
+            duration: 1000,
+            easing: 'ease-out-quart',
         });
 
         // 2. Lógica de Pantalla de Carga
@@ -489,8 +535,8 @@
                 splash.style.opacity = '0';
                 setTimeout(() => {
                     splash.style.display = 'none';
-                }, 800);
-            }, 1000);
+                }, 700);
+            }, 1200); // Un poco más de tiempo para mostrar el branding
         });
 
         // 3. Efecto Navbar Glass al hacer scroll
@@ -514,12 +560,21 @@
 
         btn.addEventListener('click', () => {
             menu.classList.toggle('hidden');
+            const icon = btn.querySelector('i');
+            if (menu.classList.contains('hidden')) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            }
         });
 
-        // Cerrar menú al hacer click en un link
         links.forEach(link => {
             link.addEventListener('click', () => {
                 menu.classList.add('hidden');
+                btn.querySelector('i').classList.remove('fa-times');
+                btn.querySelector('i').classList.add('fa-bars');
             });
         });
     </script>

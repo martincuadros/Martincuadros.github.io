@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.google.com/search?q=https://www.martincuadros.com.ar/sitemap.xml
+
+NieMarCorp SEO Optimization Standard
