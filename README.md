@@ -1,45 +1,49 @@
-Sitio Web Oficial - Dr. Martin Alan Panunzio Cuadros
+Estudio Jurídico Cuadros & Asociados - Plataforma Web
 
-Estado del Proyecto: 🚧 En Desarrollo Activo (Fase Alpha)
+Estado del Proyecto: ✅ GOLD MASTER (v1.0.0 Stable Release)
+Fecha de Lanzamiento: Enero 2026
+Desarrollador: NieMarCorp (Alejandro Gabriel Martin)
 
-Versión Actual: 1.0.0
+Este repositorio aloja el código fuente de producción para la presencia digital del Estudio Jurídico Cuadros & Asociados. El sistema ha sido diseñado con estándares de seguridad modernos, optimización SEO geolocalizada para la Provincia de Buenos Aires y una arquitectura de alto rendimiento.
 
-Este repositorio contiene el código fuente oficial para la presencia digital profesional del Dr. Martin Alan Panunzio Cuadros, abogado penalista. El sitio está diseñado para ofrecer información de contacto, descripción de servicios legales y ubicación del estudio.
+🛡️ Arquitectura y Seguridad
+
+Este no es un sitio web convencional. Ha sido construido con una filosofía de "Seguridad por Diseño":
+
+Static Site Architecture (Jamstack): Al no utilizar bases de datos ni servidores backend tradicionales (como WordPress o PHP), eliminamos el 99% de las vulnerabilidades comunes (SQL Injection, Hackeo de Admin, etc.). El sitio es virtualmente invulnerable a ataques directos.
+
+HTTPS Enforced: Todo el tráfico está encriptado con certificados SSL de grado militar a través de Cloudflare.
+
+Protección de Datos: Los formularios de contacto utilizan enrutamiento seguro (Formspree). Ningún dato sensible queda guardado en el servidor web.
 
 🛠 Ficha Técnica
 
-Propietario del Proyecto: Martin Alan Panunzio Cuadros.
+Core: HTML5 Semántico + Tailwind CSS (Utility-First Framework).
 
-Desarrollador Principal: Alejandro Gabriel Martin (NieMarCorp).
+Animaciones: AOS Library (Hardware Accelerated).
 
-Tecnologías: HTML5 Semántico, CSS3 Moderno, JavaScript (ES6+).
+Infraestructura: GitHub Pages + Cloudflare CDN.
 
-Enfoque: Diseño Responsivo (Mobile First), Alto Rendimiento y SEO para servicios legales.
+Dominio: martincuadros.com.ar (Delegado en NIC.ar).
 
-⚖️ Aviso Legal y Responsabilidades
+Correo Corporativo: Zoho Mail (Configuración MX requerida).
 
-El desarrollo técnico de este sitio web es provisto por NieMarCorp.
+🚀 Guía de Despliegue (Post-Entrega)
 
-Contenidos: Todo el texto legal, artículos, descripciones de servicios y material de imagen corporativa son propiedad exclusiva y responsabilidad del Dr. Martin Alan Panunzio Cuadros.
+Para mantener el sitio en línea, el propietario debe garantizar la vigencia de:
 
-Propósito: Este sitio tiene fines informativos sobre servicios jurídicos.
+Dominio en NIC.ar (Renovación anual).
 
-Mantenimiento: El código es mantenido y actualizado por el equipo de desarrollo asignado.
+Cuenta de Cloudflare (Gestión de DNS y Certificados).
 
-🚀 Instalación y Despliegue (Para Desarrolladores)
+Gestión de Contenidos
 
-Este proyecto es una página estática. No requiere compilación de backend compleja para su visualización básica.
+El contenido legal es responsabilidad exclusiva del Dr. Martin Alan Cuadros. Cualquier modificación en los textos de "Aviso Legal" o "Áreas de Práctica" debe ser solicitada al equipo de desarrollo o editada directamente en el código fuente bajo responsabilidad del propietario.
 
-Clonar el repositorio:
+⚖️ Limitación de Responsabilidad
 
-git clone [https://github.com/Admin-MartinCuadros/Martincuadros.github.io.git](https://github.com/martincuadros/martincuadros.github.io.git)
+NieMarCorp entrega este producto de software probado y funcional a la fecha de la versión 1.0. El desarrollador no ofrece servicios de asesoría legal ni se responsabiliza por la naturaleza de los casos que el estudio jurídico acepte a través de esta plataforma.
 
-
-Abrir el archivo index.html en su navegador de preferencia para visualizar los cambios locales.
-
-📞 Contacto de Soporte Técnico
-
-Para reportar errores visuales, problemas de carga o solicitar actualizaciones técnicas, contactar al desarrollador encargado:
-
-Desarrollado con precisión y dedicación por NieMarCorp.
-Innovación y Solidez Digital.
+Desarrollado con precisión y honor por NieMarCorp.
+Ingeniería de Software & Ciberseguridad.
+https://niemarcorp.com
