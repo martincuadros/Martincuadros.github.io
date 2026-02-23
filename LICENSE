@@ -1,38 +1,21 @@
+END OF LIFE (EOL) & IN MEMORIAM - DECLARACIÓN LEGAL
+
 COPYRIGHT (c) 2026 - PRESENTE
+ARQUITECTURA DE SOFTWARE Y MANTENIMIENTO: Alejandro Gabriel Martin (NieMarCorp)
 
-PROPIETARIO DEL SITIO Y CONTENIDOS LEGALES:
-Martin Alan Cuadros Panunzio ("El Cliente")
-Estudio Jurídico Cuadros & Asociados.
+1. ESTADO DEL PROYECTO (CLAUSURA)
+Este proyecto de software ha alcanzado su fin de ciclo de vida comercial (End of Life) debido al fallecimiento del titular original, Martín Alan Cuadros Panunzio. La licencia comercial y de servicios original redactada para el Estudio Jurídico queda totalmente REVOCADA y sin efecto legal.
 
-ARQUITECTURA DE SOFTWARE Y CIBERSEGURIDAD:
-Alejandro Gabriel Martin ("El Desarrollador" / NieMarCorp)
+2. NATURALEZA DEL REPOSITORIO
+El presente código fuente opera única y exclusivamente como un "Altar Digital" (Memorial Page) estático. No posee fines de lucro, no captura datos, no utiliza cookies de seguimiento y no ofrece ni intermediará servicios legales de ninguna índole.
 
---- TÉRMINOS DE LICENCIA Y RESPONSABILIDAD ---
+3. EXENCIÓN ABSOLUTA DE RESPONSABILIDAD
+NieMarCorp preserva este sitio "TAL CUAL" (As Is) estrictamente por motivos de duelo, respeto y memoria personal. El Desarrollador (Alejandro Gabriel Martin / NieMarCorp) queda absoluta y permanentemente eximido de cualquier responsabilidad legal, civil, penal, tributaria o comercial vinculada al antiguo Estudio Jurídico, a las gestiones del difunto titular, a los dominios asociados (como martincuadros.com.ar) o a reclamos de terceros.
 
-PROPIEDAD INTELECTUAL DIFERENCIADA
-A. CÓDIGO FUENTE: La estructura HTML, estilos CSS, scripts de optimización y la arquitectura lógica del sitio son propiedad intelectual inalienable de NieMarCorp. Se otorga al Cliente una licencia de uso perpetuo, no exclusivo e intransferible para operar su sitio web.
-B. CONTENIDOS: Los textos legales, logotipos, imágenes personales y ofertas de servicios son propiedad exclusiva del Cliente.
+4. PRIVACIDAD Y DATOS
+El enrutamiento de correos (Formspree) y las bases de contacto han sido destruidas del código. Es técnicamente imposible contactar al estudio a través de esta plataforma.
 
-EXENCIÓN DE RESPONSABILIDAD (CLAÚSULA "AS IS")
-El software se entrega "TAL CUAL", sin garantías expresas o implícitas. NieMarCorp certifica que el código entregado está libre de malware en el momento de su despliegue (Release v1.0).
+5. PROPIEDAD INTELECTUAL
+La estructura del código fuente, el diseño "Luxury Dark Mode" y la arquitectura estática siguen siendo propiedad intelectual de NieMarCorp. Queda prohibida su reproducción, copia o bifurcación (fork) para usos comerciales.
 
-NieMarCorp NO se hace responsable por:
-
-Fallos en servicios de terceros (GitHub, Cloudflare, Formspree, NIC.ar).
-
-Errores u omisiones en el contenido jurídico redactado por El Cliente.
-
-Pérdida de dominio por falta de pago o renovación por parte del Cliente.
-
-Mal uso del formulario de contacto por parte de terceros.
-
-SEGURIDAD Y DATOS
-El sitio opera bajo arquitectura "Serverless Static". No almacena bases de datos de clientes. NieMarCorp no custodia ni tiene acceso a la información confidencial que los usuarios envíen a través del formulario de contacto; dicha información viaja encriptada directamente al correo del Cliente mediante el proveedor Formspree.
-
-DERECHO DE PORTAFOLIO
-El Desarrollador se reserva el derecho de exhibir este proyecto en su portafolio profesional y redes sociales como demostración de capacidad técnica, mencionando la autoría del desarrollo.
-
-JURISDICCIÓN
-Cualquier disputa técnica o comercial derivada del desarrollo de este software se regirá bajo la buena fe y, en su defecto, bajo las leyes vigentes en la Provincia de Buenos Aires, Argentina.
-
-TODOS LOS DERECHOS RESERVADOS.
+Que en paz descanse.
